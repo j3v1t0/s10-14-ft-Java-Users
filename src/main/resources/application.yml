@@ -1,6 +1,10 @@
 springdoc:
   swagger-ui:
-    path: /user-service.html
+    path: /doc/users/user-service.html
+springfox:
+  documentation:
+    swagger-ui:
+      path: /docs/users
 
 spring:
   application:
