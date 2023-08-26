@@ -1,6 +1,6 @@
 springdoc:
   swagger-ui:
-    path: /doc/users/user-service.html
+    path: /docs/users/user-service.html
 springfox:
   documentation:
     swagger-ui:
@@ -52,7 +52,8 @@ logging:
 
 eureka:
   client:
-    fetch-registry: true
     register-with-eureka: true
+    fetch-registry: true
+    enabled: true
     service-url:
       default-zone: https://s10-14-ft-eurekaserver.azurewebsites.net/eureka
