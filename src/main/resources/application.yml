@@ -52,6 +52,15 @@ logging:
             sql:
               BasicBinder: TRACE
 
+resilience4j.retry:
+  instances:
+    userRetry:
+      max-attempts: 5
+      wait-duration: 2000ms
+      retry-exceptions:
+        - java.io.IOException
+        - java.lang.RuntimeException
+
 eureka:
   client:
     register-with-eureka: true
